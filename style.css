@@ -625,6 +625,7 @@ header nav ul li{
     color: #e29104;
     font-size: 30pt;
     margin: 10px;
+    cursor: pointer;
 }
 
 .ingredienthero1 h4{
@@ -634,6 +635,7 @@ header nav ul li{
     color: #e29104;
     font-size: 15pt;
     margin: 10px;
+    cursor: pointer;
 }
 
 .ingredienthero1 img{
@@ -641,5 +643,77 @@ header nav ul li{
     width: 40%;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+    cursor: pointer;
 }
 
+.ingredienthero2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ingredienthero2 h1{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e29104;
+    font-size: 30pt;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.ingredienthero2 li{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e29104;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.star-widget input{
+    display: none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover~label{
+    color: #fd4;
+}
+
+.star-widget input#star5:checked ~ label{
+    color: #fd4;
+    text-shadow: 0 0 20px #952;
+}
+
+.star-widget input#star4:checked ~ label{
+    color: #fd4;
+    text-shadow: 0 0 20px #952;
+}
+
+.star-widget input#star3:checked ~ label{
+    color: #fd4;
+    text-shadow: 0 0 20px #952;
+}
+
+.star-widget input#star2:checked ~ label{
+    color: #fd4;
+    text-shadow: 0 0 20px #952;
+}
+
+.star-widget input#star1:checked ~ label{
+    color: #fd4;
+    text-shadow: 0 0 20px #952;
+}
