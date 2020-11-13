@@ -610,8 +610,8 @@ header nav ul li{
 }
 
 .ingredienthero1{
-    height: 100%;
-    width: 50%;
+    height: 90%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -648,8 +648,8 @@ header nav ul li{
 }
 
 .ingredienthero2{
-    height: 100%;
-    width: 50%;
+    height: 90%;
+    width:40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -673,6 +673,7 @@ header nav ul li{
     color: #e29104;
     font-size: 15pt;
     cursor: pointer;
+    margin: 10px;
 }
 
 .star-widget input{
