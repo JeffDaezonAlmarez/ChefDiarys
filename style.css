@@ -105,6 +105,7 @@ header{
     background-color: #141518;
 }
 
+
 .nav-list{
     display: flex;
     align-items: center;
@@ -151,6 +152,15 @@ header nav ul li{
     margin: 10px;
 }
 
+i{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #FF7A7A;
+    font-size: 15pt;
+    margin: 10px;
+}
+
 .nav-list li a{
     transition: all 0.3s ease 0s;
 }
@@ -169,12 +179,15 @@ header nav ul li{
 }
 
 .homehero1{
-    height: 100%;
+    height: 90%;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
 }
 
 .homehero1 h2{
@@ -259,25 +272,48 @@ header nav ul li{
 
 .recipebox{
     height: 90%;
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: none;
+    margin: 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: rgba(116, 0, 0, 0.603);
 }
 
 .recipebox:hover{
-    background-color: #6b6969;
+    background-color: rgb(134, 48, 48);
 }
 
 .recipebox img{
-    height: 70%;
-    width: 60%;
+    height: 60%;
+    width: 80%;
     margin: 10px;
+}
+
+.select-btn{
+    height: 10%;
+    width: 40%;
+    background-color: #FFA200;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #464646;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.select-btn:hover{
+    background-color: #e29104;
+    color: white;
 }
 
 .recipebox h1{
@@ -326,15 +362,17 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
     border: none;
+    margin: 20px;
+    padding: 10px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: rgba(116, 0, 0, 0.603);
 }
 
 .chickenbox:hover{
-    background-color: #615F5F;
+    background-color: rgb(134, 48, 48);
 }
 
 .chickenbox h1{
@@ -388,15 +426,17 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
     border: none;
+    padding: 10px;
+    margin: 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: rgba(116, 0, 0, 0.603);
 }
 
 .vegetablebox:hover{
-    background-color: #615F5F;
+    background-color: rgb(134, 48, 48);
 }
 
 .vegetablebox h1{
@@ -408,11 +448,32 @@ header nav ul li{
 }
 
 .vegetablebox img{
-    height: 80%;
+    height: 60%;
     width: 80%;
     margin: 10px;
     border: none;
     border-radius: 20px;
+}
+
+.btn-ingridients{
+    height: 10%;
+    width: 50%;
+    background-color: #FFA200;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #464646;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn-ingridients:hover{
+    background-color: #e29104;
+    color: white;
 }
 
 .beefmain{
@@ -450,15 +511,17 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
     border: none;
+    padding: 10px;
+    margin: 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: rgba(116, 0, 0, 0.603);
 }
 
 .beefbox:hover{
-    background-color: #615F5F;
+    background-color: rgb(134, 48, 48);
 }
 
 .beefbox h1{
@@ -512,15 +575,17 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
     border: none;
+    padding: 10px;
+    margin: 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: rgba(116, 0, 0, 0.603);
 }
 
 .porkbox:hover{
-    background-color: #615F5F;
+    background-color: rgb(134, 48, 48);
 }
 
 .porkbox h1{
@@ -574,15 +639,17 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
     border: none;
+    margin: 20px;
+    padding: 10px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: rgba(116, 0, 0, 0.603);
 }
 
 .seafoodbox:hover{
-    background-color: #615F5F;
+    background-color: rgb(134, 48, 48);
 }
 
 .seafoodbox h1{
@@ -650,17 +717,20 @@ header nav ul li{
 .ingredienthero2{
     height: 90%;
     width:40%;
+    border: none;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: maroon;
 }
 
 .ingredienthero2 h1{
     font-style: italic;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #e29104;
+    color: #00BDF8;
     font-size: 30pt;
     margin: 10px;
     cursor: pointer;
