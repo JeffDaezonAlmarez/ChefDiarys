@@ -718,3 +718,65 @@ header nav ul li{
     color: #fd4;
     text-shadow: 0 0 20px #952;
 }
+
+.recommendedmain{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recommendedmain h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #e29104;
+    font-size: 40pt;
+}
+
+.recommendedpick{
+    height: 90%;
+    width: 100%;
+    padding: 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.recommendedbox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.recommendedbox:hover{
+    background-color: #615F5F;
+}
+
+.recommendedbox h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20pt;
+    color: #00BDF8;
+}
+
+.recommendedbox img{
+    height: 80%;
+    width: 80%;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+}
