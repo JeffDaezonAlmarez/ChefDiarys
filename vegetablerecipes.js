@@ -1,4 +1,4 @@
-const api = "https://api.edamam.com/search?q=vegetable&app_id=2005ea1f&app_key=4872069fde431e4e4d9a39b8007f9f11"
+const api = "https://api.edamam.com/search?q=vegetable&app_id=dc23e345&app_key=6160f374044377808e3ffa929a43ffeb"
 
 fetch(api)
     .then((resp) => resp.json())
