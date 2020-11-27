@@ -15,7 +15,7 @@ fetch(api)
         image.src = data.hits[i].recipe.image;
         const button = document.createElement("button");
         button.classList.add("btn-ingridients");
-        button.innerHTML = "ingridients";
+        button.innerHTML = "ingredients";
         
 
         seafoodbox.appendChild(recipetitle);

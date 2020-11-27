@@ -41,8 +41,8 @@ body{
 }
 
 .text{
-    height: 7%;
-    width: 80%;
+    height: 10%;
+    width: 100%;
     border: #615F5F 2px solid;
     border-radius: 30px;
     margin: 10px;
@@ -75,7 +75,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
 }
 
 .submit{
-    height: 7%;
+    height: 10%;
     width: 50%;
     background-color: #FFA200;
     border: none;
@@ -850,4 +850,14 @@ i{
     margin: 10px;
     border: none;
     border-radius: 20px;
+}
+
+
+form{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
