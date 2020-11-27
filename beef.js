@@ -13,14 +13,32 @@ fetch(api)
         recipetitle.innerHTML = data.hits[i].recipe.label;
         const image = document.createElement("img");
         image.src = data.hits[i].recipe.image;
-        const button = document.createElement("button");
-        button.classList.add("btn-ingridients");
-        button.innerHTML = "ingredients";
+        const popup = document.createElement("button");
+        popup.classList.add("popup");
+        popup.innerHTML = "ingredients";
+        const popuptext= document.createElement("span");
+        popuptext.classList.add("popuptext");
+        const ingredienthero2 =document.createElement("div");
+        ingredienthero2.classList.add("ingredienthero2");
+        /*const listofingre=document.createElement("li");
+        listofingre.classList.add("listofingre");
+        listofingre.innerHTML = data.hits[i].recipe.ingredientLines;*/
+
         
 
         beefbox.appendChild(recipetitle);
         beefbox.appendChild(image);
-        beefbox.appendChild(button);
-        beefpick.appendChild(beefbox)
+        beefbox.appendChild(popup);
+        beefbox.appendChild(span);
+        beefbox.appendChild(popuptext);
+        beefbox.appendChild(ingredienthero2);
+        beefbox.appendChild(listofingre);
+        beefpick.appendChild(beefbox);
+
         }
     });
+
+    function myFunction() {
+        const popup = document.getElementsByClassName("btn-ingridients");
+        popup.classList.toggle("show");
+      }

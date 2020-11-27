@@ -717,7 +717,7 @@ i{
 
 .ingredienthero2{
     height: 90%;
-    width:40%;
+    width: 90%;
     border: none;
     border-radius: 20px;
     display: flex;
@@ -860,4 +860,48 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+/*pop up*/
+.popup{
+    position: relative;
+    cursor: pointer;
+}
+  
+.popuptext{
+    visibility: hidden;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    position: absolute;
+    z-index: 1;
+}
+  
+.popuptext::after{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.popup .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+  
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }

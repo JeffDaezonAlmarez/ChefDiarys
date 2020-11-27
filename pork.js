@@ -17,7 +17,6 @@ fetch(api)
             button.classList.add("btn-ingridients");
             button.innerHTML = "ingredients";
 
-
             porkbox.appendChild(recipetitle);
             porkbox.appendChild(image);
             porkbox.appendChild(button);
